@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*! --------------------------HEADER------------------------------ */
+
+header {
+    width: 100%;
+    height: 100px;
+}
+img.logo{
+    display: flex;
+    justify-content: start;
+    height: 80%;
+    padding: 10px 0;
+    
+}
+
+/*! --------------------------MAIN------------------------------ */
+
+main {
+    background-color: #d3cfcf;
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*! --------------------------SECCION 1------------------------------ */
+
+.seccion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenedorCajaTexto{
+    position: absolute;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    justify-content: s;
+    align-items: center;
+    padding-left: 100px;
+    width: 600px;
+    height: 100px;
+    translate: 0 -150%;
+}
+.cajaTexto{
+    padding: 10px;
+    width: 1000px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: sans-serif;
+    translate: 10%;
+}
+.cajaTexto::placeholder{
+    color: rgb(3, 2, 94);
+}
+.alerta{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    padding: 20px;
+    margin-top: 80%;
+    color: grey;
+    translate: 30%;
+}
+.botones{
+    position: absolute;
+    top: 800px;
+    height: 80px;
+    padding: 15px 15% 0 0;
+    translate: 30% -100%;
+    
+}
+.btnEncrip{
+    width: 328px;
+    height: 67px;
+    border-radius: 28px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btnEncrip:hover{
+    background-color: rgb(87, 87, 247);
+    scale: 1.2;
+    border-radius: 10px;
+}
+.btnDes{
+    width: 328px;
+    height: 67px;
+    border-radius: 28px;
+    background-color: rgb(137, 137, 138);
+    color: rgb(36, 5, 214);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border: 1px solid blue;
+    cursor: pointer;
+    transition: 0.2s;
+translate: 15%;
+}
+.btnDes:hover{
+    background-color: rgb(194, 194, 194);
+    scale: 1.2;
+    border-radius: 10px;
+}
+
+
+/*! --------------------------SECCION 2------------------------------ */
+
+.seccion2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 95%;
+    margin: 10px 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+.copiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    background-color: aqua;
+    padding-left: 40px;
+}
+.btnCopiar{
+    width: 328px;
+    height: 67px;
+    border-radius: 28px;
+    background-color: #ececec;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    right: 4px;
+    transition: 0.2s;
+    translate: -5%;
+}
+.btnCopiar:hover{
+    background-color: rgb(69, 66, 248);
+    color: #ffffff;
+    scale: 1.1;
+    border-radius: 10px;
+}
+.ocultar{
+    display: none;
+}
+.resultado{
+    translate: 0 -900%;
+    font-style: italic;
+    color: blue;
+    font-size: 30px;
+}
