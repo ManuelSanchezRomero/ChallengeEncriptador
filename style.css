@@ -10,6 +10,8 @@
 header {
     width: 100%;
     height: 100px;
+    display: flex;
+    align-items: end;
 }
 img.logo{
     display: flex;
@@ -19,10 +21,25 @@ img.logo{
     
 }
 
+.titulo{
+    color: black;
+    font-size: 60px;
+    font-weight: 100;
+    font-style: italic;
+}
+
 /*! --------------------------MAIN------------------------------ */
 
 main {
-    background-color: #d3cfcf;
+
+    background: rgba(82,82,82,1);
+    background: -moz-linear-gradient(-45deg, rgba(82,82,82,1) 0%, rgba(0,121,250,1) 52%, rgba(48,98,152,1) 80%, rgba(82,82,82,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(82,82,82,1)), color-stop(52%, rgba(0,121,250,1)), color-stop(80%, rgba(48,98,152,1)), color-stop(100%, rgba(82,82,82,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(82,82,82,1) 0%, rgba(0,121,250,1) 52%, rgba(48,98,152,1) 80%, rgba(82,82,82,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(82,82,82,1) 0%, rgba(0,121,250,1) 52%, rgba(48,98,152,1) 80%, rgba(82,82,82,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(82,82,82,1) 0%, rgba(0,121,250,1) 52%, rgba(48,98,152,1) 80%, rgba(82,82,82,1) 100%);
+    background: linear-gradient(135deg, rgba(82,82,82,1) 0%, rgba(0,121,250,1) 52%, rgba(48,98,152,1) 80%, rgba(82,82,82,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', endColorstr='#525252', GradientType=1 );
     position: absolute;
     width: 100%;
     height: 95%;
@@ -39,7 +56,7 @@ main {
 }
 .contenedorCajaTexto{
     position: absolute;
-    background-color: rgb(206, 206, 206);
+    background-color: transparent;
     display: flex;
     justify-content: s;
     align-items: center;
@@ -59,6 +76,10 @@ main {
     font-weight: 400;
     font-family: sans-serif;
     translate: 10%;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
 }
 .cajaTexto::placeholder{
     color: rgb(3, 2, 94);
@@ -70,7 +91,7 @@ main {
     display: flex;
     padding: 20px;
     margin-top: 80%;
-    color: grey;
+    color: rgb(8, 8, 8);
     translate: 30%;
 }
 .botones{
@@ -79,6 +100,7 @@ main {
     height: 80px;
     padding: 15px 15% 0 0;
     translate: 30% -100%;
+    
     
 }
 .btnEncrip{
@@ -94,6 +116,10 @@ main {
     margin-right: 20px;
     cursor: pointer;
     transition: 0.2s;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+    
 }
 .btnEncrip:hover{
     background-color: rgb(87, 87, 247);
@@ -113,6 +139,9 @@ main {
     cursor: pointer;
     transition: 0.2s;
 translate: 15%;
+-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
 }
 .btnDes:hover{
     background-color: rgb(194, 194, 194);
@@ -135,7 +164,9 @@ translate: 15%;
     background-color: #ffffff;
     box-sizing: border-box;
     border-radius: 32px;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
 }
 .copiar{
     display: flex;
@@ -172,7 +203,7 @@ translate: 15%;
     display: none;
 }
 .resultado{
-    translate: 0 -900%;
+    translate: 0 -300%;
     font-style: italic;
     color: blue;
     font-size: 30px;
